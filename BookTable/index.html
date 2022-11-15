@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BookTable</title>
+    <link rel="icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-time">
+        <h2 class="heading">Timings</h2>
+        <h3 class="heading-days">Monday-Friday</h3>
+        <p>7AM - 10PM</p>
+
+        <h3 class="heading-days">Saturday and Sunday</h3>
+        <p>9AM - 12PM</p>
+        <br /><br />
+        <h4 class="heading-phone">Call Us:</h4>
+        <h4 class="heading-phone">+123-456-7890</h4>
+        <h4 class="heading-phone">+111-222-333</h4>
+      </div>
+
+      <div class="container-form">
+        <form onsubmit = "return submitForm()" action="../Main Page/index.html" method="post">
+          <h2 class="heading heading-yellow">Table Reservation</h2>
+
+          <div class="form-field">
+            <p>Your Name</p>
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-field">
+            <p>Your email</p>
+            <input type="email" placeholder="Your email" required/>
+          </div>
+          <div class="form-field">
+            <p>Date</p>
+            <input type="date" required/>
+          </div>
+          <div class="form-field">
+            <p>Time</p>
+            <input type="time" required/>
+          </div>
+          <div class="form-field">
+            <p>How many people?</p>
+            <input type="number" required/>
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

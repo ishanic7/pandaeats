@@ -1,0 +1,116 @@
+:root{
+    --orange:#da4208;
+    --blackish:#282727;
+}
+html::-webkit-scrollbar{
+    width:0.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:var(--blackish);
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--orange);
+}
+
+body {
+    background: url(../Images/bg-banner.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container {
+    background-color: #fafafa;
+    margin: 8%;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container-time {
+    background-color: var(--blackish);
+    padding: 50px;
+    outline: 3px dashed var(--orange);
+    outline-offset: -30px;
+    text-align: center;
+}
+
+
+.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+                
+.heading-days {
+    color:var(--orange);
+    font-size: 30px;
+                
+}
+                
+.heading-phone {
+    font-size: 20px;
+}
+
+
+.container-form {
+    padding: 20px 0;
+    margin: 0 auto;
+    color: var(--blackish);
+}
+
+form {
+    display: grid;
+    grid-row-gap: 20px;
+}
+form p {
+    font-weight: 600;
+}
+.form-field {
+    display: flex;
+    justify-content: space-between;
+    
+}
+                        
+input,select {
+    padding: 10px 15px;
+    width: 28%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: var(--blackish);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+                            
+.btn:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 10px 12px 15px var(--blackish);
+}
